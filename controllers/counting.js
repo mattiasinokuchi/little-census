@@ -47,10 +47,12 @@ module.exports = {
     try {
       // ...find user...
       const doc = await Users.findById(req.user._id);
-      // ...add one to letOut...
-      let count = doc.letOut;
-      count++;
-      doc.letOut = count;
+      if ((doc.letIn-doc.letOut)>0) {
+        // ...add one to letOut...
+        let count = doc.letOut;
+        count++;
+        doc.letOut = count;
+      }
       // ...save count...
       await doc.save();
       // ...and responds
