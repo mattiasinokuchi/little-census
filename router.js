@@ -37,8 +37,6 @@ router.get("/load", counting.load);
 router.get("/let-in", counting.in);
 router.get("/let-out", counting.out);
 router.get("/reset", counting.reset);
-router.get("/que", counting.que);
-router.get("/call", counting.call);
 
 // Make routes available from server.js
 module.exports = router;

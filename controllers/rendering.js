@@ -60,13 +60,7 @@ module.exports = {
           username: req.body.username,
           password: hash,
           letIn: 0,
-          letOut: 0,
-          que: [
-            {
-              date: newDate,
-              number: 0
-            }
-          ]
+          letOut: 0
         });
         // ...then passes user object to passport.authenticate
         next(null, doc[0]);

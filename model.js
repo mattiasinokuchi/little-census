@@ -20,12 +20,6 @@ const userSchema = new mongoose.Schema({
   password: String,
   letIn: Number,
   letOut: Number,
-  que: [
-    {
-      date: Date,
-      number: Number
-    }
-  ]
 });
 
 // Define model (class) for MongoDB documents
