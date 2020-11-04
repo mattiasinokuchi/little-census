@@ -8,9 +8,8 @@ html
     link(rel='stylesheet', href='style.css')
   body
     button(id="reset") 🗑
-    h1 #{username}
+    h1 Den lille folkräknaren - #{username}
     fieldset
-      legend Besöksräknare
       span(id="inside")
       span(aria-label="people")  👯👬🏃👫
       p
@@ -19,21 +18,6 @@ html
       p
         span(id="visits")
         span  👣
-    br
-    fieldset
-      legend Könummer
-      button(id="que") + 😐
-      span 
-      span(id="lastInQue")
-      span  (nytt) 
-      p
-        button(id="call") - 😐
-        span 
-        span(id="firstInQue")
-        span  (kallat) 
-      p ⏳ 
-        span(id="queTime") 
-        span  min
     p
       a(href='/logout') Logga ut
     script(src="client.js")
