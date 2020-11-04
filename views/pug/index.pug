@@ -8,25 +8,24 @@ html
     link(rel='stylesheet', href='style.css')
   body
     h1#pug-variable=message
-    hr
     h2.center Logga in som befintlig användare
     form(action='/login', method='post').center
       div
-        label Användarnamn:
+        label 🆔
         input(type='text', name='username')
       div
-        label Lösenord:
+        label 🔑
         input(type='password', name='password')
       div
-        input(type='submit', value='☞🚪')
+        input(type='submit', value='☞')
     hr
     h2.center Logga in som ny användare
     form(action='/register', method='post').center
       div
-        label Användarnamn:
+        label 🆔
         input(type='text', name='username')
       div
-        label Lösenord:
+        label 🔑
         input(type='password', name='password')
       div
-        input(type='submit', value='☞🚪')
+        input(type='submit', value='☞')
