@@ -1,0 +1,39 @@
+html
+  head
+    title Räkna Besökare
+    meta(name='description', content='Profile')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='style.css')
+  body
+    button(id="reset") 🗑
+    h1 #{username}
+    fieldset
+      legend Besöksräknare
+      span(id="inside")
+      span  🧘🏽‍♂️🤸🏼‍♂️🤼‍♀️👫🚶🏿‍♂️🧑🏻‍🦽
+      p
+        button(id="in") + 😀
+        button(id="out") - 😀
+      p
+        span(id="visits")
+        span  👣
+    br
+    fieldset
+      legend Könummer
+      button(id="que") + 😐
+      span 
+      span(id="lastInQue")
+      span  (nytt) 
+      p
+        button(id="call") - 😐
+        span 
+        span(id="firstInQue")
+        span  (kallat) 
+      p ⏳ 
+        span(id="queTime") 
+        span  min
+    p
+      a(href='/logout') Logga ut
+    script(src="client.js")
