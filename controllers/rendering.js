@@ -12,9 +12,7 @@ module.exports = {
   // Route handler for request to home page
   home: (req, res) => {
     res.render('pug', {
-      message: 'Välkommen till besöksräknaren',
-      showLogin: true,
-      showRegistration: true
+      message: 'Välkommen till den lille folkräknaren'
     });
   },
 
@@ -28,6 +26,7 @@ module.exports = {
     if (req.isAuthenticated()) {
       // ...render the page...
       res.render('pug/profile', {
+        title: 'Folkräknaren',
         username: req.user.username
       });
     } else {

@@ -1,6 +1,6 @@
 html
   head
-    title Räkna Besökare
+    title #{title}
     meta(name='description', content='Profile')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -8,7 +8,7 @@ html
     link(rel='stylesheet', href='style.css')
   body
     button(id="reset") 🗑
-    h1 Den lille folkräknaren - #{username}
+    h1 #{title} (#{username})
     fieldset
       span(id="inside")
       span(aria-label="people")  👯👬🏃👫
