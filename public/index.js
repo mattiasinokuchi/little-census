@@ -1,7 +1,4 @@
-console.log("language: ", window.navigator.language);
-
 if (window.navigator.language == 'sv-SE') {
-  console.log('svenska');
   document.querySelectorAll('[lang="sv"]').forEach(function (node) {
     node.hidden = false;
   });
@@ -9,7 +6,6 @@ if (window.navigator.language == 'sv-SE') {
     node.hidden = true;
   });
 } else {
-  console.log('engelska');
   document.querySelectorAll('[lang="sv"]').forEach(function (node) {
     node.hidden = true;
   });
