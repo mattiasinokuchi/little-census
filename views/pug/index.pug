@@ -11,10 +11,10 @@ html
     h2 #{loginMessage}
     form(action='/login', method='post').center
       p
-        label 🆔 
+        label(aria-label="ID") 🆔 
         input(type='text', name='username')
       p
-        label 🔑 
+        label(aria-label="key") 🔑 
         input(type='password', name='password')
       p
         input(type='submit', value='☞')
@@ -22,10 +22,10 @@ html
     h2 #{registerMessage}
     form(action='/register', method='post').center
       p
-        label 🆔 
+        label(aria-label="ID") 🆔 
         input(type='text', name='username')
       p
-        label 🔑 
+        label(aria-label="key") 🔑 
         input(type='password', name='password')
       p
         input(type='submit', value='☞')

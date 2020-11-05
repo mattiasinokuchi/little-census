@@ -6,7 +6,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='style.css')
   body
-    button(id="reset") 🗑
+    button(id="reset" aria-label="bin") 🗑
     h4 #{title} (#{username})
     fieldset
       span(id="inside")
@@ -16,7 +16,7 @@ html
         button(id="out") - 😀
       p
         span(id="visits")
-        span  👣
+        span(aria-label="footsteps")  👣
     p
-      a(href='/logout') 🚪
+      a(href='/logout' aria-label="door") 🚪
     script(src="profile.js")
