@@ -7,8 +7,8 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='style.css')
   body
-    h1#pug-variable=message
-    h2.center Logga in som befintlig användare
+    h1 den lille folkräknaren 🚶 the little census
+    h2#pug-variable=loginMessage
     form(action='/login', method='post').center
       p
         label 🆔 
@@ -19,7 +19,7 @@ html
       p
         input(type='submit', value='☞')
     hr
-    h2.center Logga in som ny användare
+    h2#pug-variable=loginMessage
     form(action='/register', method='post').center
       p
         label 🆔 

@@ -6,13 +6,18 @@ const bcrypt = require('bcrypt');
 // Import data model
 const Users = require("../model");
 
+// Define message variables
+let loginMessage = "Logga in som befintlig användare";
+let registerMessage = "Logga in som befintlig användare";
+
 // Make handlers available from router.js
 module.exports = {
 
   // Route handler for request to home page
   home: (req, res) => {
     res.render('pug', {
-      message: 'Välkommen till den lille folkräknaren'
+      loginMessage: loginMessage,
+      registerMessage: registerMessage
     });
   },
 
