@@ -39,8 +39,14 @@ module.exports = {
   profile: async (req, res) => {
     if (req.isAuthenticated()) {
       // ...render the page...
+      let title = "";
+      if (req.acceptsLanguages('sv')) {
+        title = "Den lille folkräknaren";
+      } else {
+        title = "The little census";
+      }
       res.render('pug/profile', {
-        title: 'Folkräknaren',
+        title: title,
         username: req.user.username
       });
     } else {
