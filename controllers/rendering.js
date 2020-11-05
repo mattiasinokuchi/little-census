@@ -15,6 +15,7 @@ module.exports = {
 
   // Route handler for request to home page
   home: (req, res) => {
+    console.log(req.acceptsLanguages('sv'));
     res.render('pug', {
       loginMessage: loginMessage,
       registerMessage: registerMessage
