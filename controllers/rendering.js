@@ -6,15 +6,20 @@ const bcrypt = require('bcrypt');
 // Import data model
 const Users = require("../model");
 
-// Define message variables
-let loginMessage = "Befintlig användare - Existing user";
-let registerMessage = "Ny användare - New user";
-
 // Make handlers available from router.js
 module.exports = {
 
   // Route handler for request to home page
   home: (req, res) => {
+    let loginMessage = "";
+    let registerMessage = "";
+    if (req.acceptsLanguages('sv')) {
+      loginMessage = "Befintlig användare";
+      registerMessage = "Ny användare";
+    } else {
+      loginMessage = "Existing user";
+      registerMessage = "New user";
+    }
     console.log(req.acceptsLanguages('sv'));
     res.render('pug', {
       loginMessage: loginMessage,
