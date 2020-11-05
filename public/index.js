@@ -1,18 +1,19 @@
 console.log("language: ", window.navigator.language);
 
-/*function localize (language) {
-  if (['sv'].includes(language)) {
-    console.log("includes sv");
-    let lang = ':lang(' + language + ')';
-    let hide = '[lang]:not(' + lang + ')';
-    document.querySelectorAll(hide).forEach(function (node) {
-      node.style.display = 'none';
-    });
-    let show = '[lang]' + lang;
-    document.querySelectorAll(show).forEach(function (node) {
-      node.style.display = 'unset';
-    });
-  }
+if (window.navigator.language == 'sv-SE') {
+  console.log('svenska');
+  document.querySelectorAll("#sv").forEach(function (node) {
+    node.hidden = false;
+  });
+  document.querySelectorAll("#en").forEach(function (node) {
+    node.hidden = true;
+  });
+} else {
+  console.log('engelska');
+  document.querySelectorAll("#sv").forEach(function (node) {
+    node.hidden = true;
+  });
+  document.querySelectorAll("#en").forEach(function (node) {
+    node.hidden = false;
+  });
 }
-
-localize(window.navigator.language);*/
