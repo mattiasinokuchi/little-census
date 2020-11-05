@@ -72,7 +72,6 @@ module.exports = {
       const user = await Users.findOne({ username: req.body.username });
       if (user) {
         // ...redirects home if username is occupied...
-        registerMessage = "Välj ett annat namn - Choose another name";
         res.redirect('/');
       } else {
         // ...or adds username and encrypted password in the database...
