@@ -1,14 +1,14 @@
 html
   head
-    title Inloggning
+    title #{title}
     meta(name='description', content='Home page')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='style.css')
   body
-    h1#pug-variable=title
-    h2#pug-variable=loginMessage
+    h1 #{title}
+    h2 #{loginMessage}
     form(action='/login', method='post').center
       p
         label 🆔 
@@ -19,7 +19,7 @@ html
       p
         input(type='submit', value='☞')
     hr
-    h2#pug-variable=registerMessage
+    h2 #{registerMessage}
     form(action='/register', method='post').center
       p
         label 🆔 
