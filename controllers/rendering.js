@@ -11,17 +11,20 @@ module.exports = {
 
   // Route handler for request to home page
   home: (req, res) => {
+    let title = "";
     let loginMessage = "";
     let registerMessage = "";
     if (req.acceptsLanguages('sv')) {
+      title = "Den lille folkräknaren 🚶";
       loginMessage = "Befintlig användare";
       registerMessage = "Ny användare";
     } else {
+      title = "The little census 🚶";
       loginMessage = "Existing user";
       registerMessage = "New user";
     }
-    console.log(req.acceptsLanguages('sv'));
     res.render('pug', {
+      title: title,
       loginMessage: loginMessage,
       registerMessage: registerMessage
     });
