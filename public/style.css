@@ -1,6 +1,13 @@
-/*[lang] {
-  display: none;
+body {
+  font-size: calc(1rem + 1vw);
 }
-[lang=sv] {
-  display: unset;
-}*/
+
+input {
+  height: 10vw;
+  width: 50vw;
+}
+
+input[type="submit"] {
+  height: 10vw;
+  width: 20vw;
+}
