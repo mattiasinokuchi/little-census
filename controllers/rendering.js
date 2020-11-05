@@ -7,8 +7,8 @@ const bcrypt = require('bcrypt');
 const Users = require("../model");
 
 // Define message variables
-let loginMessage = "Logga in som befintlig användare";
-let registerMessage = "Logga in som befintlig användare";
+let loginMessage = "Befintlig användare - Existing user";
+let registerMessage = "Ny användare - New user";
 
 // Make handlers available from router.js
 module.exports = {
@@ -57,6 +57,7 @@ module.exports = {
       const user = await Users.findOne({ username: req.body.username });
       if (user) {
         // ...redirects home if username is occupied...
+        registerMessage = "Välj ett annat namn - Choose another name";
         res.redirect('/');
       } else {
         // ...or adds username and encrypted password in the database...
