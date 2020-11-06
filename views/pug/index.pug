@@ -7,19 +7,17 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='style.css')
   body
-    header
-      h1 #{title}
-      h4 #{headMessage}
-    main
-      form(action='/login' method='post').center
-        p
-          label(aria-label="ID") 🆔 
-          input(type='text', name='username')
-        p
-          label(aria-label="key") 🔑 
-          input(type='password', name='password')
-        br
-        p
-          button(type='submit') ☞ #{loginMessage}
-        p
-          button(type='submit' formaction='/register') ☞ #{registerMessage}
+    h1 #{title}
+    h4 #{headMessage}
+    form(action='/login' method='post').center
+      p
+        label(aria-label="ID") 🆔 
+        input(type='text', name='username')
+      p
+        label(aria-label="key") 🔑 
+        input(type='password', name='password')
+      br
+      p
+        button(type='submit') ☞ #{loginMessage}
+      p
+        button(type='submit' formaction='/register') ☞ #{registerMessage}
