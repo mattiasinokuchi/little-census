@@ -15,6 +15,7 @@ input, #reset {
 [type='submit'], label, #in, #out, #footsteps {
   font-size: calc(2rem + 2vw);
   border-radius: 2vw;
+  margin: 5vw;
 }
 
 #visits, #inside {
