@@ -1,5 +1,5 @@
 body {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(0.75rem + 0.75vw);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +10,7 @@ body {
 [type='submit'], label, input, #reset {
   font-size: calc(1.5rem + 1.5vw);
   border-radius: 2vw;
+  padding-inline: 2vw;
 }
 
 #in, #out, #footsteps {
@@ -19,5 +20,5 @@ body {
 }
 
 #visits, #inside {
-  font-size: calc(5rem + 5vw);
+  font-size: calc(4rem + 4vw);
 }
