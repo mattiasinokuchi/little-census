@@ -7,17 +7,17 @@ body {
   height: 100%;
 }
 
-input, #reset {
+[type='submit'], label, input, #reset {
   font-size: calc(1.5rem + 1.5vw);
   border-radius: 2vw;
 }
 
-[type='submit'], label, #in, #out, #footsteps {
+#in, #out, #footsteps {
   font-size: calc(2rem + 2vw);
   border-radius: 2vw;
   margin: 5vw;
 }
 
 #visits, #inside {
-  font-size: calc(3rem + 3vw);
+  font-size: calc(5rem + 5vw);
 }

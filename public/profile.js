@@ -13,7 +13,7 @@ outButton.addEventListener("click", function(event) {
 });
 
 resetButton.addEventListener("click", function(event) {
-  if (window.confirm("Nollställ besöksräknare?")) {
+  if (window.confirm("Reset?")) {
     countsAt('/reset');
   }
 });
