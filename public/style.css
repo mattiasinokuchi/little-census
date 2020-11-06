@@ -7,10 +7,10 @@ body {
   height: 100%;
 }
 
-#visits, #inside, #in, #out, #footsteps {
-  font-size: calc(2rem + 2vw);
-}
-
 input {
   font-size: calc(1.5rem + 1.5vw);
+}
+
+#visits, #inside, #in, #out, #footsteps {
+  font-size: calc(2rem + 2vw);
 }
