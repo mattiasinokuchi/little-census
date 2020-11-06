@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 100%;
 }
 
@@ -11,6 +11,10 @@ input {
   font-size: calc(1.5rem + 1.5vw);
 }
 
-[type='submit'], label, #visits, #inside, #in, #out, #footsteps {
+[type='submit'], label, #in, #out, #footsteps {
   font-size: calc(2rem + 2vw);
+}
+
+#visits, #inside {
+  font-size: calc(3rem + 3vw);
 }
