@@ -4,13 +4,3 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-input {
-  height: 10vw;
-  width: 50vw;
-}
-
-input[type="submit"] {
-  height: 10vw;
-  width: 20vw;
-}
