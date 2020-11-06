@@ -16,15 +16,18 @@ module.exports = {
     let registerMessage = "";
     if (req.acceptsLanguages('sv')) {
       title = "Den lille folkräknaren 🚶";
+      headMessage = "Räkna besökare (eller kor, ufon m.m.) ensam eller med andra";
       loginMessage = "Befintlig användare";
       registerMessage = "Ny användare";
     } else {
       title = "The little census 🚶";
+      headMessage = "Count visitors (or cows, UFO's etc.) alone or with others";
       loginMessage = "Existing user";
       registerMessage = "New user";
     }
     res.render('pug', {
       title: title,
+      headMessage: headMessage,
       loginMessage: loginMessage,
       registerMessage: registerMessage
     });
