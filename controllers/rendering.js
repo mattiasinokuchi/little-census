@@ -16,14 +16,14 @@ module.exports = {
     let registerMessage = "";
     if (req.acceptsLanguages('sv')) {
       title = "Den lille folkräknaren 🚶";
-      headMessage = "Räkna besökare (eller ufon, sällsynta fåglar m.m). Använd samma ID för att räkna tillsammans med andra.";
-      loginMessage = "Befintlig användare";
-      registerMessage = "Ny användare";
+      headMessage = "Räkna besökare (eller ufon, sällsynta fåglar m.m). Logga in med samma ID för att räkna tillsammans med andra.";
+      loginMessage = "Befintligt event";
+      registerMessage = "Nytt event";
     } else {
       title = "The little census 🚶";
-      headMessage = "Count visitors (or UFO's, rare birds etc.). Use same ID to count together with others.";
-      loginMessage = "Existing user";
-      registerMessage = "New user";
+      headMessage = "Count visitors (or UFO's, rare birds etc.). Login with same ID to count together with others.";
+      loginMessage = "Existing event";
+      registerMessage = "New event";
     }
     res.render('pug', {
       title: title,
