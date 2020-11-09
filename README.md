@@ -1,3 +1,3 @@
 ## About
 
-Web app for counting people at events restricted due to Covid-19
+Web app for the sake of learning javascript, authentication, mongoDB, simple localization and other things
