@@ -19,13 +19,13 @@ module.exports = {
       headMessage = "Räkna besökare (eller ufon, sällsynta fåglar m.m). Logga in med samma ID för att räkna tillsammans med andra.";
       loginMessage = "Befintligt event";
       registerMessage = "Nytt event";
-      footerMessage = "För enkel åtkomst och funktionalitet sparas användarnamn och lösenord hos dig ('cookie') och i en databas tillsammans med antalen (moln-service i Frankfurt). Använd inte räknaren för känslig information eftersom du kan förlora den eller sluga typer kan komma åt den (inget HTTPS-protokoll ännu).";
+      footerMessage = "För enkel åtkomst och funktionalitet sparas användarnamn och lösenord hos dig ('cookie') och i en databas (moln-service någonstans i Frankfurt) tillsammans med antalen. Använd inte räknaren för känslig information eftersom du kan förlora den eller sluga typer kan komma åt den (inget HTTPS-protokoll ännu).";
     } else {
       title = "The little census 🚶";
       headMessage = "Count visitors (or UFO's, rare birds etc.). Login with same ID to count together with others.";
       loginMessage = "Existing event";
       registerMessage = "New event";
-      footerMessage = "For easy access and functionality username and password are stored at your place ('cookie') and in a database along with the numbers (cloud-service somewhere in Frankfurt). Do not use the counter for sensitive information as you might loose it or cunning types can access it (no HTTPS protocol yet).";
+      footerMessage = "For easy access and functionality username and password are stored at your place ('cookie') and in a database (cloud-service somewhere in Frankfurt) along with the numbers. Do not use the counter for sensitive information as you might loose it or cunning types can access it (no HTTPS protocol yet).";
     }
     res.render('pug', {
       title: title,
