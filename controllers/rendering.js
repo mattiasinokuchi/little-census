@@ -20,6 +20,12 @@ module.exports = {
       loginMessage = "Befintligt event";
       registerMessage = "Nytt event";
       footerMessage = "För enkel åtkomst och funktionalitet sparas användarnamn och lösenord hos dig ('cookie') och i en databas (moln-service någonstans i Frankfurt) tillsammans med antalen. Använd inte räknaren för känslig information eftersom du kan förlora den eller sluga typer kan komma åt den (inget HTTPS-protokoll ännu).";
+    if (req.acceptsLanguages('es')) {
+      title = "El pequeño censo 🚶";
+      headMessage = "Contar visitantes (o ovnis, aves raras, etc.). Inicie sesión con el mismo ID para contar junto con otros.";
+      loginMessage = "Evento existente";
+      registerMessage = "Nuevo evento";
+      footerMessage = "Para facilitar el acceso y la funcionalidad, su nombre de usuario y contraseña se almacenan ('cookie') y en una base de datos (servicio en la nube en algún lugar de Frankfurt) junto con los números. No utilice el contador de información confidencial, ya que puede perderlo o los tipos astutos pueden acceder a él (todavía no hay protocolo HTTPS).";
     } else {
       title = "The little census 🚶";
       headMessage = "Count visitors (or UFO's, rare birds etc.). Login with same ID to count together with others.";
